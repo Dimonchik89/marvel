@@ -1,0 +1,138 @@
+.search {
+    margin-top: 30px;
+    padding: 10px 20px;
+    width: 100%;
+
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.25);
+}
+
+.search__form {
+    margin-top: 15px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.search__input {
+    padding: 10px 20px;
+    border: 0;
+    box-shadow: 0 0 10px rgba(0,0,0,0.25);
+
+    flex-grow: 1;
+
+    &:focus,
+    &:active {
+        outline: none;
+    }
+}
+
+.search__button {
+
+    width: 100px;
+
+    margin: 0 0 10px 15px;
+    border: 0;
+    background: transparent;
+
+    cursor: pointer;
+    &::before {
+        content: '';
+        display: block;
+        background: #9F0013;
+        height: 10px;
+        margin-left: 10px;
+        transition: 0;
+    }
+
+    &::after {
+        content: '';
+        display: block;
+        background: #9F0013;
+        height: 10px;
+        margin-right: 10px;
+    }
+}
+
+.search__button-inner {
+    position: relative;
+    background: #9F0013;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 0 10px;
+
+    &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: -10px;
+        left: 0;
+        z-index: 5;
+
+        border-color: #9F0013 transparent;
+        border-style: solid;
+        border-width: 0 0 10px 10px;
+    }
+
+    &::after {
+        content: '';
+        display: block;
+
+        position: absolute;
+        bottom: -10px;
+        right: 0;
+        z-index: 5;
+
+        border-color: #9F0013 transparent;
+        border-style: solid;
+        border-width: 10px 10px 0 0;
+    }
+}
+
+.btn__gray {
+
+
+    &::after {
+        background-color: gray;
+        border-color: gray transparent;
+    }
+
+    &::before {
+        background-color: gray;
+        border-color: gray transparent;
+    }
+}
+
+.btn-inner__gray {
+    background-color: gray;
+
+    &::after {
+        border-color: gray transparent;
+    }
+
+    &::before {
+        border-color: gray transparent;
+    }
+}
+
+.search__result {
+    display: flex;
+    justify-content: space-between;
+}
+
+.search__error {
+    margin-top: 8px;
+    color: red;
+}
+
+.mar-top {
+    margin-top: 10px;
+}
+
+.green {
+    color: green;
+}
+
+.red {
+    color: red;
+}

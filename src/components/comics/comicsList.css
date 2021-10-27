@@ -1,0 +1,26 @@
+.comics__wrapper {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 55px 66px ;
+}
+
+.comics__item {
+    width: 100%;
+    max-width: 255px;
+
+    cursor: pointer;
+}
+
+.comics__img {
+    max-width: 225px;
+    height: 346px;
+    /* max-width: 255px; */
+    /* object-fit: contain; */
+}
+
+@media (max-width: 860px) {
+    .comics__wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
